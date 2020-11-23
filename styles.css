@@ -1,0 +1,87 @@
+body{
+	background-color: red;
+	font-family: helvetica;
+}
+a:link{
+	text-decoration: none;
+	margin: 0px 20px;
+	font-size: 20px;
+	font-weight: 700;
+	}
+a:visited{
+	color: black;
+}
+a:hover{
+	color: #ff6600;
+}
+a:active{
+	color: #ffffff;
+}
+.container{
+	background-color: #ffffff;
+	max-width: 1366px;
+	margin: 0px auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.col{
+	background-color: #eeeeee;
+	margin: 10px 1%;
+	padding: 10px 1%;
+	flex-grow: 1;
+}
+.oneFour{
+	flex-grow: 0;
+	width: 21%;
+}
+.twoFour{
+	flex-grow: 0;
+	width: 46%;
+}
+.threeFour{
+	flex-grow: 0;
+	width: 71%;
+}
+.imgSizer{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0px auto;
+}
+.mobileShow{
+	display: none;
+}
+/*tablet coding*/
+@media only screen and (max-width: 768px){
+	.container{
+		background-color: green;
+	}
+	.tabletOneTwo{
+		flex-grow: 0;
+		width: 46%;
+	}
+	.tabletTwoTwo{
+		flex-grow: 0;
+		width: 96%;
+
+	}
+}
+/*mobile coding*/
+@media only screen and (max-width: 520px){
+	.container{
+		background-color: blue;
+	}
+	.col{
+		flex-grow: 0;
+		width: 96%;
+	}
+	.mobileHide{
+		display: none;
+	}
+	.mobileShow{
+	display: block;
+	}
+}
+
